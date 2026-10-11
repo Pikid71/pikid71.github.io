@@ -1,290 +1,511 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="About me page for Pi_Kid71">
+        <title>About Pi_Kid71</title>
+        <link rel="icon" href="favicon.jpg">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                transition: all 0.3s ease;
+            }
+            body {
+                background: rgb(16, 16, 16);
+                color: white;
+                display: grid;
+                place-items: center;
+                height: 100vh;
+            }
+            .cont{
+                border: 1px solid gray;
+                border-radius: 24px;
+                width: 50%;
+                height: fit-content;
+                padding: 20px;
+                background: rgb(8,8,8);
+            }
+            .header{
+                display: flex;
+                gap: 8px;
+            }
+            img{
+                width: auto;
+                height: 40px;
+            }
+            h1{
+                font-size: 40px;
+                text-align: left;
+                color: rgb(0, 200, 0);
+                font-family: 'Courier New', Courier, monospace;
+            }
+            p{
+                font-family: 'Courier New', Courier, monospace;
+                margin: 10px 0;
+            }
+            .nav{
+                display: flex;
+                gap: 8px;
+                margin-top: 12px;
+                margin-bottom: 18px;
+            }
 
-    <title>About Me | Pi_Kid71</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            transition: all 0.3s ease;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #0b0b0b;
-            color: white;
-            line-height: 1.6;
-        }
-
-        header {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 30px;
-            background:
-                radial-gradient(circle at center, #300000 0%, #0b0b0b 60%);
-        }
-
-        header h1 {
-            font-size: clamp(3rem, 10vw, 7rem);
-            margin-bottom: 10px;
-        }
-
-        header h1 span {
-            color: #ff3030;
-        }
-
-        header p {
-            color: #aaa;
-            font-size: 1.2rem;
-            max-width: 600px;
-        }
-
-        .button {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 25px;
-            border-radius: 8px;
-            background: #e00000;
-            color: white;
-            text-decoration: none;
-            transition: 0.2s;
-        }
-
-        .button:hover {
-            background: #ff3030;
-            transform: translateY(-2px);
-        }
-
-        main {
-            max-width: 1000px;
-            margin: auto;
-            padding: 70px 25px;
-        }
-
-        section {
-            margin-bottom: 70px;
-        }
-
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #ff3030;
-        }
-
-        .card-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: #151515;
-            border: 1px solid #292929;
-            border-radius: 12px;
-            padding: 25px;
-            transition: 0.2s;
-        }
-
-        .card:hover {
-            border-color: #ff3030;
-            transform: translateY(-5px);
-        }
-
-        .card h3 {
-            margin-bottom: 10px;
-        }
-
-        .card p {
-            color: #aaa;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .skill {
-            background: #1c1c1c;
-            border: 1px solid #333;
-            border-radius: 20px;
-            padding: 8px 15px;
-        }
-
-        .links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .links a {
-            color: white;
-            text-decoration: none;
-            background: #171717;
-            border: 1px solid #333;
-            padding: 12px 18px;
-            border-radius: 8px;
-            transition: 0.2s;
-        }
-
-        .links a:hover {
-            border-color: #ff3030;
-            color: #ff3030;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #666;
-            border-top: 1px solid #222;
-        }
-    </style>
-</head>
-
-<body>
-
-    <header>
-        <h1>Hi, I'm <span>Pi_Kid71</span></h1>
-
-        <p>
-            I'm a student, programmer, and creator who enjoys building
-            websites, experimenting with technology, and learning how things work.
-        </p>
-
-        <a class="button" href="#about">Learn More</a>
-    </header>
-
-
-    <main>
-
-        <section id="about">
-            <h2>About Me</h2>
-
-            <p>
-                I'm an 8th grade student interested in programming, science,
-                technology, and making my own projects. I like experimenting
-                with new ideas and turning them into things that actually work.
-            </p>
-        </section>
-
-
-        <section>
-            <h2>What I Do</h2>
-
-            <div class="card-container">
-
-                <div class="card">
-                    <h3>💻 Programming</h3>
-                    <p>
-                        I build projects using languages like JavaScript,
-                        HTML, CSS, and Python.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>🌐 Web Development</h3>
-                    <p>
-                        I enjoy creating websites, interactive experiences,
-                        and web applications.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>🤖 Experiments</h3>
-                    <p>
-                        I like testing APIs, AI models, databases,
-                        servers, and other technology.
-                    </p>
-                </div>
-
+            button{
+                flex: 1;
+                padding: 10px;
+                background: gray;
+                border: 1px solid gray;
+                border-radius: 4px;
+                color: white;
+                font-family: 'Courier New', Courier, monospace;
+                cursor: pointer;
+            }
+            button:hover{
+                background: #333;
+                border: 1px solid #333;
+            }
+            button:active{
+                background: #555;
+                border: 1px solid #555;
+            }
+            button:disabled{
+                background: #555;
+                border: 1px solid #555;
+                cursor: wait;
+            }
+            .card{
+                border: 1px solid gray;
+                border-radius: 24px;
+                width: 100%;
+                height: auto;
+                padding: 20px;
+                background: rgb(16, 16, 16);
+                margin: 10px 0;
+                display: flex;
+            }
+            .holder{
+                flex-grow: 1;
+            }
+            h2{
+                font-size: 24px;
+                text-align: left;
+                color: rgb(0, 200, 0);
+                font-family: 'Courier New', Courier, monospace;
+            }
+            h3{
+                font-size: 20px;
+                text-align: left;
+                color: rgb(64, 64, 64);
+                font-family: 'Courier New', Courier, monospace;
+            }
+            h5{
+                font-size: 16px;
+                text-align: left;
+                color: rgb(255, 255, 255);
+                font-family: 'Courier New', Courier, monospace;
+                display: inline;
+                vertical-align: middle;
+            }
+            .main-section{
+                margin: 0;
+                width: 80%;
+                height: auto;
+                padding: 20px;
+            }
+            .status-icon{
+                width: 20px;
+                height: 20px;
+                vertical-align: middle;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
+                color: rgb(0, 200, 0);
+            }
+            .link{
+                color:#333;
+                text-decoration: none;
+                vertical-align: middle;
+                height: fit-content;
+                align-self: center;
+                margin-right: 10px;
+                display: inline-block;
+            }
+            .link:hover{
+                color:#fff;
+            }
+            .progress-bar{
+                width: 100%;
+                height: 10px;
+                background: #333;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+            .progress{
+                height: 100%;
+                background: rgb(0, 200, 0);
+                width: 0%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cont" id="cont">
+            <div class="header">
+                <img src="favicon.jpg" alt="Profile Picture">
+                <h1 id="username">Pi_Kid71</h1>
             </div>
-        </section>
-
-
-        <section>
-            <h2>My Projects</h2>
-
-            <div class="card-container">
-
-                <div class="card">
-                    <h3>InfraRed</h3>
-                    <p>
-                        A web-based chat platform with accounts,
-                        rooms, authentication, and real-time messaging.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>Games</h3>
-                    <p>
-                        Interactive games and experiments made with
-                        JavaScript, HTML, and Scratch.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>AI Projects</h3>
-                    <p>
-                        Experiments involving AI APIs, chat systems,
-                        and creative tools.
-                    </p>
-                </div>
-
+            <div class="nav">
+                <button id="home-btn" onclick="load_home()">Home</button>
+                <button id="about-btn" onclick="load_about()">About</button>
+                <button id="projects-btn" onclick="load_projects()">Projects</button>
+                <button id="contact-btn" onclick="load_contact()">Contact</button>
             </div>
-        </section>
-
-
-        <section>
-            <h2>Skills & Technologies</h2>
-
-            <div class="skills">
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">JavaScript</span>
-                <span class="skill">Python</span>
-                <span class="skill">Node.js</span>
-                <span class="skill">Git</span>
-                <span class="skill">GitHub</span>
-                <span class="skill">MongoDB</span>
-                <span class="skill">Socket.IO</span>
-                <span class="skill">Scratch</span>
+            <div class="main-section" id="section_home">
+                <p id="small-desc" class="desc">Hi, im Aashish, also known as Pi_Kid71 or pikid71.</p>
+                <div class="card" id="discord_card">
+                    <div class="holder">
+                        <div class="header">
+                            <a href="https://discord.com/users/1503440414265315432" target="_blank" rel="noopener noreferrer">
+                                <h2 id="discord_display_name">loading discord user</h2>
+                           </a>
+                            <a href="https://discord.gg/ncrib" target="_blank" rel="noopener noreferrer">
+                                <h5 id="discord_tag">Discord Tag</h5>
+                            </a>
+                        </div>
+                        <h3 id="discord_username">Discord Username</h3>
+                        <p id="discord_state"></p>
+                        <p id="discord_status"></p>
+                    </div>
+                    <a class="link" href="https://discord.com/users/1503440414265315432" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://w3.org" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; vertical-align: middle;">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+                <div class="card" id="spotify_card">
+                    <div class="holder">
+                        <div class="header"><a href="https://open.spotify.com/user/1503440414265315432" target="_blank" rel="noopener noreferrer"><h2 id="spotify_stats">Not using spotify</h2></a></div>
+                        <h3 id="spotify_current_track" style="color: #ccc;">No track playing</h3>
+                        <div class="header">
+                            <p id="elapsed-time" style="color: gray;">0:00</p>
+                            <div class="progress-bar" id="spotify_progress_bar"><div class="progress" id="spotify_progress"></div></div>
+                            <p id="total-time" style="color: gray;">0:00</p>
+                        </div>
+                    </div>
+                    <a class="link" href="https://automv.phin.jp/u/1503440414265315432" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://w3.org" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; vertical-align: middle;">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
             </div>
-        </section>
-
-
-        <section>
-            <h2>Find Me</h2>
-
-            <div class="links">
-                <a href="https://github.com/PiKid71" target="_blank">
-                    GitHub
-                </a>
-
-                <a href="https://pikid71.github.io" target="_blank">
-                    My Website
-                </a>
-
-                <a href="https://ir.pikid71.me" target="_blank">
-                    InfraRed
-                </a>
+            <div class="main-section" id="section_about">
+                <p id="about-desc" class="desc">a little bit about me</p>
+                <p id="more-about-desc">Im a 13 year old student who loves to code and be a part of cool projects. I am a part of //AEMBOT//, a //FIRST// robotics team, and our team number is 6443. //breakline////breakline// i usually spend my time playing soccer or working on my chat website infrared</p>
             </div>
-        </section>
+            <div class="main-section" id="section_projects">
+                <p id="projects-desc" class="desc">Here are some of my projects</p>
+                <div class="card">
+                    <div class="holder">
+                        <h2 id="project">Black Hole Chat</h2>
+                        <p id="project-desc">A chat application Made by AI.</p>
+                    </div>
+                    <a class="link" href="https://bh.pikid71.me" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://w3.org" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; vertical-align: middle;">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="holder">
+                        <h2 id="project">Infrared</h2>
+                        <p id="project-desc">A chatting website designed for teachers and students to  connect with each other.</p>
+                    </div>
+                    <a class="link" href="https://ir.pikid71.me" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://w3.org" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; vertical-align: middle;">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="holder">
+                        <h2 id="project">Soccer Game</h2>
+                        <p id="project-desc">A simple soccer game built with on Scratch.</p>
+                    </div>
+                    <a class="link" href="https://scratch.mit.edu/projects/1241857173/" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://w3.org" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; vertical-align: middle;">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="main-section" id="section_contact">
+                <p id="contact-desc" class="desc">Feel free to reach out to me!</p>
+                <div class="card">
+                    <div class="holder">
+                        <h2 id="contact">Gmail</h2>
+                        <p class="desc">aashishmishra6666@gmail.com</p>
+                    </div>
+                    <a class="link" href="mailto:aashishmishra6666@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://w3.org" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; vertical-align: middle;">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="holder">
+                        <h2 id="contact">Discord</h2>
+                        <p class="desc">@Pi_Kid71</p>
+                    </div>
+                    <a class="link" href="https://discord.com/users/1503440414265315432" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://w3.org" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; vertical-align: middle;">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="holder">
+                        <h2 id="contact">GitHub</h2>
+                        <p class="desc">@pikid71</p>
+                    </div>
+                    <a class="link" href="https://github.com/pikid71" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://w3.org" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; vertical-align: middle;">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script>
+let current_page;
 
-    </main>
+//buttons
+const home_btn = document.getElementById('home-btn')
+const about_btn = document.getElementById('about-btn')
+const projects_btn = document.getElementById('projects-btn')
+const contact_btn = document.getElementById('contact-btn')
 
+function load_home() {
+    if (current_page === 'home') return
+    document.getElementById('section_home').style.display = 'block'
+    document.getElementById('section_about').style.display = 'none'
+    document.getElementById('section_projects').style.display = 'none'
+    document.getElementById('section_contact').style.display = 'none'
+    username_init('Pi_Kid71')
+    mini_desc_init()
+    load_lanyard_data()
+    current_page = 'home'
+    home_btn.disabled = true
+    about_btn.disabled = true
+    projects_btn.disabled = true
+    contact_btn.disabled = true
+    setTimeout(() => {
+        home_btn.disabled = false
+        about_btn.disabled = false
+        projects_btn.disabled = false
+        contact_btn.disabled = false
+    }, 3000)
+}
+function load_about() {
+    if (current_page === 'about') return
+    document.getElementById('section_home').style.display = 'none'
+    document.getElementById('section_about').style.display = 'block'
+    document.getElementById('section_projects').style.display = 'none'
+    document.getElementById('section_contact').style.display = 'none'
+    username_init('Pi_Kid71')
+    about_desc_init()
+    current_page = 'about'
+    home_btn.disabled = true
+    about_btn.disabled = true
+    projects_btn.disabled = true
+    contact_btn.disabled = true
 
-    <footer>
-        <p>© 2026 Pi_Kid71</p>
-    </footer>
+    setTimeout(() => {
+        home_btn.disabled = false
+        about_btn.disabled = false
+        projects_btn.disabled = false
+        contact_btn.disabled = false
+    }, 3000)
+}
+function load_projects() {
+    if (current_page === 'projects') return
+    document.getElementById('section_projects').style.display = 'block'
+    document.getElementById('section_about').style.display = 'none'
+    document.getElementById('section_home').style.display = 'none'
+    document.getElementById('section_contact').style.display = 'none'
+    username_init('Pi_Kid71')
+    projects_desc_init()
+    current_page = 'projects'
+    home_btn.disabled = true
+    about_btn.disabled = true
+    projects_btn.disabled = true
+    contact_btn.disabled = true
+    setTimeout(() => {
+        home_btn.disabled = false
+        about_btn.disabled = false
+        contact_btn.disabled = false
+        projects_btn.disabled = false
+    }, 3000)
+}
+function load_contact() {
+    if (current_page === 'contact') return
+    document.getElementById('section_contact').style.display = 'block'
+    document.getElementById('section_home').style.display = 'none'
+    document.getElementById('section_about').style.display = 'none'
+    document.getElementById('section_projects').style.display = 'none'
+    username_init('Pi_Kid71')
+    contact_desc_init()
+    current_page = 'contact'
+    home_btn.disabled = true
+    about_btn.disabled = true
+    contact_btn.disabled = true
+    projects_btn.disabled = true
+    setTimeout(() => {
+        home_btn.disabled = false
+        about_btn.disabled = false
+        projects_btn.disabled = false
+        contact_btn.disabled = false
+    }, 3000)
+}
+function username_init(usrnm) {
+    const username = document.getElementById('username')
+    username.innerHTML = ''
+    for ( let i = 0; i < usrnm.length; i++ ) {
+        setTimeout(() => {
+            username.innerHTML += usrnm[i]
+        }, i * 20 )
+    }
+}
+function mini_desc_init() {
+    const small_desc = document.getElementById('small-desc')
+    const small_desc_html = small_desc.innerHTML
+    small_desc.innerHTML = ''
 
-</body>
+    
+    for ( let i = 0; i < small_desc_html.length; i++ ) {
+        setTimeout(() => {
+            small_desc.innerHTML += small_desc_html[i]
+        }, i * 20 )
+    }
+}
+function about_desc_init() {
+    const about_desc = document.getElementById('about-desc')
+    const about_desc_html = about_desc.innerHTML
+    about_desc.innerHTML = ''
+
+    for ( let i = 0; i < about_desc_html.length; i++ ) {
+        setTimeout(() => {
+            about_desc.innerHTML += about_desc_html[i]
+        }, i * 20 )
+        document.getElementById('more-about-desc').style.display = 'none'
+        setTimeout(() => {
+            more_about_desc_init()
+        }, about_desc_html.length * 20 )
+    }
+}
+function more_about_desc_init() {
+    const more_about_desc = document.getElementById('more-about-desc')
+    more_about_desc.style.display = 'block'
+    let more_about_desc_html = more_about_desc.innerHTML
+    more_about_desc_html = more_about_desc_html.replace('<a href="https://aembot.com" target="_blank" rel="noopener noreferrer">AEMBOT</a>', '//AEMBOT//')
+    more_about_desc_html = more_about_desc_html.replace('<a href="https://www.firstinspires.org/" target="_blank" rel="noopener noreferrer">FIRST</a>', '//FIRST//')
+    more_about_desc_html = more_about_desc_html.replace('<br>', '//breakline//').replace('<br>', '//breakline//')
+    more_about_desc.innerHTML = ''
+    for ( let i = 0; i < more_about_desc_html.length; i++ ) {
+        setTimeout(() => {
+            more_about_desc.innerHTML += more_about_desc_html[i]
+            more_about_desc.innerHTML = more_about_desc.innerHTML.replace('//time//', new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit',}))
+            more_about_desc.innerHTML = more_about_desc.innerHTML.replace('//TIME//', new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Los_Angeles' }))
+            more_about_desc.innerHTML = more_about_desc.innerHTML.replace('//AEMBOT//', '<a href="https://aembot.com" target="_blank" rel="noopener noreferrer">AEMBOT</a>')
+            more_about_desc.innerHTML = more_about_desc.innerHTML.replace('//FIRST//', '<a href="https://www.firstinspires.org/" target="_blank" rel="noopener noreferrer">FIRST</a>')
+            more_about_desc.innerHTML = more_about_desc.innerHTML.replace('//breakline//', '<br>')
+        }, i * 20 )
+    }
+}
+function projects_desc_init() {
+    const projects_desc = document.getElementById('projects-desc')
+    const projects_desc_html = projects_desc.innerHTML
+    projects_desc.innerHTML = ''
+
+    for ( let i = 0; i < projects_desc_html.length; i++ ) {
+        setTimeout(() => {
+            projects_desc.innerHTML += projects_desc_html[i]
+        }, i * 20 )
+    }
+}
+function contact_desc_init() {
+    const contact_desc = document.getElementById('contact-desc')
+    const contact_desc_html = contact_desc.innerHTML
+    contact_desc.innerHTML = ''
+
+    for ( let i = 0; i < contact_desc_html.length; i++ ) {
+        setTimeout(() => {
+            contact_desc.innerHTML += contact_desc_html[i]
+        }, i * 20 )
+    }
+}
+load_home()
+
+setInterval(() => {
+    load_lanyard_data();
+}, 1000)
+
+load_lanyard_data();
+function load_lanyard_data() {
+    let fetch_data;
+    if (current_page === 'home') {
+        fetch("https://api.lanyard.rest/v1/users/1503440414265315432")
+            .then(r => r.json())
+            .then(data => {
+                fetch_data = data.data
+            }).then(() => {
+                console.log(fetch_data);
+                document.getElementById('discord_display_name').innerHTML = fetch_data.discord_user.display_name;
+                document.getElementById('discord_tag').innerHTML = fetch_data.discord_user.primary_guild.tag;
+                document.getElementById('discord_username').innerHTML = '@' + fetch_data.discord_user.username;
+                document.getElementById('discord_state').innerHTML = (fetch_data.activities?.[0]?.emoji?.name || '') + " " + (fetch_data.activities?.[0]?.state || '');
+                if (fetch_data.listening_to_spotify) {
+                    document.getElementById('spotify_stats').innerHTML = fetch_data.spotify?.song || 'Not using spotify';
+                    document.getElementById('spotify_current_track').innerHTML = fetch_data.spotify?.artist;
+                    const { start, end } = fetch_data.spotify?.timestamps || {};
+                    const now = Date.now();
+                    const total = end - start;
+                    const elapsed = now - start;
+                    const progress = (elapsed / total) * 100;
+                    const p = (progress || 0) + '%';
+                    document.getElementById('elapsed-time').innerHTML = new Date(elapsed).toLocaleTimeString('en-US', { hour12: false, minute: '2-digit', second: '2-digit' });
+                    document.getElementById('total-time').innerHTML = new Date(total).toLocaleTimeString('en-US', { hour12: false, minute: '2-digit', second: '2-digit' });
+                    document.getElementById('spotify_progress').style.width = p
+                    document.getElementById('spotify_card').style.display = 'flex';
+                } else {
+                    document.getElementById('spotify_card').style.display = 'none';
+                }
+                const discord_status = fetch_data.discord_status || 'offline';
+                document.getElementById('discord_status').innerHTML = `<img class="status-icon" src="discord_${discord_status}.png" alt="Status: ${discord_status}"> ` + discord_status + ' on discord';
+            });
+    }    
+}
+        </script>
+    </body>
 </html>
